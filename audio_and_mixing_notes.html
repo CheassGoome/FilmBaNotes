@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio and mixing notes</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="img/home.svg" alt="home" class="icon home">
+        </a>
+        <h1 class="center title">Audio and Mixing</h1>
+    </header>
+
+    <h1>For every project set these specifics</h1>
+    <ul>
+        <li>
+            <ul>
+                <b class="blue" title="ctrl + p">Options &#129170; Preferences...</b>
+                <li>
+                    tab <b class="blue">Preferences</b>
+                    <ul>
+                        <li>
+                            Prompt to save on new project &#8594; <span class="green">&#128505;</span>
+                        </li>
+                    </ul>
+                    <!-- tab <b></b>
+                    <li>
+                        
+                    </li> -->
+                </li>
+            </ul>
+        </li>
+        <br>
+        <li>
+            <ul>
+                <b class="blue" title="alt + Enter">File &#129170; Project settings</b>
+                <li>
+                    <ul>
+                        <li>
+                            tab <b class="blue">Project Settings</b>
+                            <ul>
+                                <li>
+                                    Project sample rate &#8594; <span class="green">48000</span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            tab <b class="blue">Media</b>
+                            <ul>
+                                <li>
+                                    On import of media to project &#8594; <span class="green">Copy media to project
+                                        path</span>
+                                </li>
+                                <li>
+                                    WAV bit depth &#8594; <span class="green">24 bit PCM</span>
+                                </li>
+                                <li>
+                                    Large files &#8594; <span class="green">WAV</span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            tab <b class="blue">Video</b>
+                            <ul>
+                                <li>
+                                    Frame &#8594; <span class="green">25</span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <span class="blue">Save as default project settings</span>
+            </ul>
+        </li>
+        <br>
+        <li>
+            When saving the project for the first time, check the following:
+            <ul>
+                <li><span class="blue">Create subdirectory for project</span>
+                    &#8594; <span class="green">&#128505;</span>
+                </li>
+                <li>
+                    <span class="blue">Copy all media into project directory, using:</span> &#8594; <span
+                        class="green">&#128505;</span>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <br>
+
+    <h1>Additional notes</h1>
+    <ul>
+        <li>
+            The preferred buffer is set to 512 samples <span class="gray">(as seen in class, or 128 samples as seen in
+                the pdf prof Martini shared)</span> to achieve lower latency. More samples may be needed for >10
+            tracks
+        </li>
+        <li>
+            The ruler's unit can be changed by clicking with the right mouse button on the Arrangement Window
+        </li>
+        <li>
+            Every track has basic controls, such as volume, fase, mute, solo, ...
+        </li>
+        <li>
+            Master controls and the track controls are linked
+        </li>
+        <li>
+            The mixer can be docked and undocked through the rmb contextual menu
+        </li>
+        <li>
+            Windows doesn't allow to drag and drop files to the Arrangement Window from a preview of a zip folders
+            content
+        </li>
+    </ul>
+
+
+
+    <br>
+    <h1>Definitions and names</h1>
+    <ul>
+        <li>
+            Item &#8594; audio/midi/video track
+        </li>
+        <li>
+            MIDI &#8594; Musical Instrument Digital Interface
+        </li>
+        <li>
+            Arrangement Window &#8594; the window where the audio tracks are visually displayed
+        </li>
+    </ul>
+
+
+    <br>
+    <h2>Shortcuts</h2>
+
+
+    <table>
+        <tr>
+            <td>ctrl + M</td>
+            <td class="arrow">&#8594;</td>
+            <td>Show/hide mixer</td>
+        </tr>
+        <tr>
+            <td>W</td>
+            <td class="arrow">&#8594;</td>
+            <td>Place the head/cursor to the start of the timeline</td>
+        </tr>
+        </tr>
+        <tr>
+            <td>End</td>
+            <td class="arrow">&#8594;</td>
+            <td>Place the head/cursor to the end of the timeline</td>
+        </tr>
+        <tr>
+            <td>alt + Enter</td>
+            <td class="arrow">&#8594;</td>
+            <td>Open <span class="blue">Project Settings</span></td>
+        </tr>
+        <tr>
+            <td>ctrl + P</td>
+            <td class="arrow">&#8594;</td>
+            <td>Open <span class="blue">Preferences</span></td>
+        </tr>
+        <tr>
+            <td>ctrl + alt + T</td>
+            <td class="arrow">&#8594;</td>
+            <td>Show/hide <span class="blue">Transport (Play/Record/Stop...)</span></td>
+        </tr>
+    </table>
+
+    <hr>
+    <h1>Exam</h1>
+    <p>
+        The exam will be done using Reaper <u>without any plugin</u>.<br>
+        Every assignment copleted in a <u>satisfactory</u> manner will count for +1 at the exam.<br>
+        Missing assignment will count as -2 at the exam.
+    </p>
+    <hr>
+
+    <footer class="center">
+        Reaper video references &#8594; <a href="https://www.reaper.fm/videos.php"
+            target="_blank">https://www.reaper.fm/videos.php</a>
+        <img src="img/dark_open_in_new.svg" alt="Reaper video tutorials" class="icon-small">
+        <br>
+        Legend:
+        <br>
+        <span class="blue">Blue highlight</span> &#8594; Menu voice or setting
+        <br class="short">
+        <span class="green">Green highlight</span> &#8594; Suggested setting value
+        <br class="short">
+        <p style="margin-bottom: 0;">For any and all incorrect information provided write to me.<br>
+            If you don't know how to contact me it's your problem.</p>
+        <br>
+        Document created 11 February 2026
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+
+</html>

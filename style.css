@@ -1,0 +1,142 @@
+* {
+    line-height: 1.5;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e3e3e3;
+}
+
+/*UTILS*/
+.center {
+    text-align: center;
+}
+
+.blue {
+    /* used for paths or menu voices */
+    color: #3869dc;
+}
+
+.green {
+    /* used for values */
+    color: #2aa12e;
+}
+
+.gray {
+    color: #676767;
+    font-size: 0.9em;
+}
+
+.yellow {
+    color: #dccd2f;
+}
+
+.arrow {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+}
+
+.icon-small {
+    width: 1em;
+    height: 1em;
+    fill: black;
+}
+
+/*SPECIFIC*/
+body {
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: 0;
+    margin: 0;
+    min-height: 100vh;
+}
+
+header {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border: 0;
+    margin-top: 0;
+}
+
+h1, h2 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+h1 {
+    font-size: 1.4em;
+}
+
+h2 {
+    margin-top: 2em;
+}
+
+.title {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 50px;
+}
+
+.home {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+br {
+    line-height: 2.5;
+}
+
+br.short {
+    line-height: 0!important;
+}
+
+footer {
+    margin-top: 150px;
+    padding: 2em 0 2em 0;
+    font-size: 0.9em;
+    color: #777;
+}
+
+ul {
+    margin-top: 0;
+}
+
+hr {
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+a {
+    text-decoration: underline;
+    color: #886339;
+}
+
+/* Glyph made by Harry Roberts */
+hr {
+    overflow: visible;
+    /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+
+hr:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.9em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: inherit;
+}
