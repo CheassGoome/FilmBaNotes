@@ -47,13 +47,18 @@
 
 /*SPECIFIC*/
 body {
-    padding-left: 120px;
-    padding-right: 120px;
     padding-top: 0;
     padding-bottom: 0;
     border: 0;
     margin: 0;
     min-height: 100vh;
+}
+
+.body {
+    padding-left: 120px;
+    padding-right: 120px;
+    height: 100%;
+    width: 100%;
 }
 
 header {
@@ -86,9 +91,10 @@ h2 {
 }
 
 .home {
-    position: absolute;
-    top: 40px;
-    left: 40px;
+    /* position: absolute; */
+    position: sticky;
+    top: 35px;
+    left: 35px;
 }
 
 br {
@@ -140,3 +146,5 @@ hr:after {
     padding: 0 0.25em;
     background: inherit;
 }
+
+/* Mobile last */
