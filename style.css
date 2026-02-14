@@ -26,7 +26,20 @@
 }
 
 .yellow {
-    color: #dccd2f;
+    color: #c9bb22;
+}
+
+.info {
+    color: #676767;
+}
+
+.date {
+    color: #237318;
+}
+
+.name {
+    /*Name of an important person*/
+    background-color: #c9bb2294;
 }
 
 .arrow {
@@ -58,7 +71,7 @@ body {
     padding-left: 120px;
     padding-right: 120px;
     height: 100%;
-    width: 100%;
+    width: auto;
 }
 
 header {
@@ -71,7 +84,8 @@ header {
     margin-top: 0;
 }
 
-h1, h2 {
+h1,
+h2 {
     margin-top: 1em;
     margin-bottom: 1em;
 }
@@ -102,7 +116,7 @@ br {
 }
 
 br.short {
-    line-height: 0!important;
+    line-height: 0 !important;
 }
 
 footer {
