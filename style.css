@@ -67,7 +67,7 @@ body {
     min-height: 100vh;
 }
 
-.body {
+.content_container {
     padding-left: 120px;
     padding-right: 120px;
     height: 100%;
@@ -162,3 +162,17 @@ hr:after {
 }
 
 /* Mobile last */
+@media (max-width: 1250px) {
+    .content_container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .home {}
+
+    .icon {
+        width: 40px;
+        height: 40px;
+    }
+
+}
