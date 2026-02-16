@@ -58,6 +58,12 @@
     fill: black;
 }
 
+a.external-link::after{
+    content: url(img/open_in_new.svg);
+    filter: brightness(0.4);
+    margin-left: 5px;
+}
+
 /*SPECIFIC*/
 body {
     padding-top: 0;
