@@ -21,12 +21,12 @@
         <ul>
             <li>
                 <ul>
-                    <b class="blue" title="ctrl + p">Options &#129170; Preferences...</b>
+                    <b><span class="blue">Options</span> &#129170; <span class="blue">Preferences...</span></b>
                     <li>
-                        tab <b class="blue">Preferences</b>
+                        tab <b><span class="blue">Project</span></b>
                         <ul>
                             <li>
-                                Prompt to save on new project &#8594; <span class="green">&#128505;</span>
+                                <span class="blue">Prompt to save on new project</span> &#8594; <span class="green">&#128505;</span>
                             </li>
                         </ul>
                         <!-- tab <b></b>
@@ -39,37 +39,37 @@
             <br>
             <li>
                 <ul>
-                    <b class="blue" title="alt + Enter">File &#129170; Project settings</b>
+                    <b><span class="blue">File</span> &#129170; <span class="blue">Project settings</span></b>
                     <li>
                         <ul>
                             <li>
-                                tab <b class="blue">Project Settings</b>
+                                tab <b><span class="blue">Project Settings</span></b>
                                 <ul>
                                     <li>
-                                        Project sample rate &#8594; <span class="green">48000</span>
+                                        <span class="blue">Project sample rate</span> &#8594; <span class="green">48000</span>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                tab <b class="blue">Media</b>
+                                tab <b><span class="blue">Media</span></b>
                                 <ul>
                                     <li>
-                                        On import of media to project &#8594; <span class="green">Copy media to project
+                                        <span class="blue">On import of media to project</span> &#8594; <span class="green">Copy media to project
                                             path</span>
                                     </li>
                                     <li>
-                                        WAV bit depth &#8594; <span class="green">24 bit PCM</span>
+                                        <span class="blue">WAV bit depth</span> &#8594; <span class="green">24 bit PCM</span>
                                     </li>
                                     <li>
-                                        Large files &#8594; <span class="green">WAV</span>
+                                        <span class="blue">Large files</span> &#8594; <span class="green">WAV</span> <span class="info">(It just needs to have WAV in the option, I guess <span class="green">Auto WAV/RF64</span> would be ok)</span>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                tab <b class="blue">Video</b>
+                                tab <b><span class="blue">Video</span></b>
                                 <ul>
                                     <li>
-                                        Frame &#8594; <span class="green">25</span>
+                                        <span class="blue">Frame</span> &#8594; <span class="green">25</span>
                                     </li>
                                 </ul>
                             </li>
@@ -100,56 +100,179 @@
         <h2 id="reaper-notes">Reaper-related notes</h2>
         <ul>
             <li>
-                The preferred buffer is set to 512 samples <span class="info">(as seen in class, or 128 samples as seen
+                The preferred buffer is set to <span class="green">512</span> samples <span class="info">(as seen in class, or 128 samples as seen
                     in
-                    the pdf prof Martini shared)</span> to achieve lower latency. More samples may be needed for >10
+                    the pdf the professor shared)</span> to achieve lower latency. More samples may be needed for >10
                 tracks
             </li>
             <li>
-                The ruler's unit can be changed by clicking with the right mouse button on the Arrangement Window
+                The ruler's unit can be changed by clicking <img class="inline-icon" src="img/icon_rmb.png" alt="Right Mouse Button" title="Right Mouse Button"> on the Arrangement Window
             </li>
             <li>
-                Every track has basic controls, such as volume, fase, mute, solo, ...
+                Every item has basic controls, such as <span class="blue">Volume</span>, <!-- <img class="inline-icon" src="img/reaper/icon_reaper_mute.png" alt="Mute button" title="Mute button">, <img class="inline-icon" src="img/reaper/icon_reaper_solo.png" alt="Solo toggle button" title="Solo toggle button">, --><span class="blue">Mute</span>, <span class="blue">Solo</span>, <span class="blue">Track FX</span>, ...
             </li>
             <li>
                 Master controls and the track controls are linked
             </li>
             <li>
-                The mixer can be docked and undocked through the rmb contextual menu
+                The <span class="blue">Mixer</span> can be <span class="blue">docked</span> and un<span class="blue">docked</span> through the contextual menu (<img class="inline-icon" src="img/icon_rmb.png" alt="Right Mouse Button" title="Right Mouse Button"> on the <span class="blue">mixer</span>)
             </li>
             <li>
                 Windows doesn't allow to drag and drop files to the Arrangement Window from a preview of a zip folders
                 content
             </li>
             <li>
-                While working with multiple selections or a group of items, holding SHIFT will allow for adjustments individual to the 
+                While working with multiple selections or a group of items, holding <span class="aqua">shift</span> will allow for individual adjustments
+            </li>
+            <li>
+                On the automation strip under an item, dragging <span class="orange">ctrl</span> + <img class="inline-icon" src="img/icon_lmb.png" alt="Left Mouse Button" title="Left Mouse Button"> allows to draw the value over the channel length
+            </li>
+            <li>
+                To change the behaviour of the <span class="blue">Snapping Tool</span>, click <img class="inline-icon" src="img/icon_rmb.png" alt="Right Mouse Button" title="Right Mouse Button"> on the <span class="blue">Snapping Tool</span> and check <span class="blue">Snap to grid at any distance</span>
+            </li>
+            <li>
+                Trimming a media clip can be done by clicking <img class="inline-icon" src="img/icon_lmb.png" alt="Left Mouse Button" title="Left Mouse Button"> on the left or right edge of the clip and dragging.
+                <br class="short">
+                Extending a clip beyond the starting or ending point will loop it to fit the extension.
+                <br class="short">
+                The start/end of the clip is visually noted with two arrows
+                <br class="short">
+                <img class="img-100" src="img/reaper/reaper_media_clip_start_and_finish_point_arrows.png" alt="Screenshot of an audio clip being extended beyond it's length showing the top and bottom arrows that indicate the beginning/ending of the clip" title="Top and bottom arrows indicate the clip beginning/ending">
+            </li>
+            <li>
+                An item can be stretched by dragging the left or right edge of an item while holding <span class="purple">alt</span> and <img class="inline-icon" src="img/icon_lmb.png" alt="Left Mouse Button" title="Left Mouse Button">. This action preserves the pitch.
+                <br class="short">
+                Stretching an item is distinguished by this cursor:
+                <br class="short">
+                <img class="img-100" src="img/reaper/reaper_stretch_item.png" alt="Reaper's cursor that indicates the possibility to stretch the item underneath the cursor" title="Stretch cursor">
+            </li>
+            <li>
+                Upon import of a .wav file, Reaper creates .reapeaks files that store computed data on the .wav files so that it doesn't need to be recomputed. They can be deleted without issues.
+            </li>
+            
+            <br class="short">
+            <li>
+                The professor suggests the following settings
+                <ul>
+                    <li>
+                        <p>
+                            Change some backups settings
+                        </p>
+                        <b><span class="blue">Options</span> &#129170; <span class="blue">Preferences...</span></b>
+                        <ul>
+                            <li>
+                                tab <b><span class="blue">Project</span> &#129170; <span class="blue">Backups</span></b>
+                                <ul>
+                                    <li>
+                                        <span class="blue">Auto-save to timestamped file in project directory</span> &#8594; <span class="green">&#128505;</span>
+                                    </li>
+                                    <li>
+                                        <span class="blue">Auto-save interval:</span> &#8594; <span class="green">5</span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <br class="short">
+                    <li>
+                        <p>
+                            Although optional, avoid having some knobs disappearing from the Item in the Track list everytime the <span class="blue">mixer</span> is opened</p>
+                        <b><span class="blue">Options</span> &#129170; <span class="blue">Themes</span> &#129170; <span class="blue">Theme Adjuster / Color Controls</span></b>
+                        <ul>
+                            <li>
+                                disable <span class="green">HIDE</span> from column <span class="blue">If mixer visible</span> to
+                                <ul>
+                                    <li>
+                                        <span class="blue">ROUTE</span>
+                                    </li>
+                                    <li>
+                                        <span class="blue">Pan</span>
+                                    </li>
+                                    <li>
+                                        <span class="blue">Phase Inverter</span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <br class="short">
+                    <li>
+                        <p>
+                            By default the loudness meters show the levels post-fader.
+                            <br class="short">
+                            To change the loudness meter to measure the pre-fader value, check the following
+                        </p>
+                        <b><span class="blue">Options</span> &#129170; <span class="blue">Preferences...</span></b>
+                        <ul>
+                            <ul>
+                                <li>
+                                    tab <b><span class="blue">Track Meters</span></b> <span class="info">(under tab Appearance)</span>
+                                    <ul>
+                                        <li>
+                                            <span class="blue">Track meters display pre-fader levels</span> &#8594; <span class="green">&#128505;</span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </ul>
+                    </li>
+                    <br class="short">
+                    <li>
+                        <p>
+                            To distinguish different media pieces overlapping on the same channel, change the following
+                        </p>
+                        <b><span class="blue">Options</span></b>
+                        <ul>
+                            <li>
+                                <span class="blue">Offset overlapping media items vertically</span> &#8594; <span class="green">&#128505;</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <br class="short">
+                    <li>
+                        <p>
+                            When <span class="blue">Auto-crossfade</span> is disabled <img class="inline-icon" src="img/reaper/icon_reaper_auto_crossfade_disabled.png" alt="Auto-crossfade icon" title="Auto-crossfade icon">, by default many items overlapping are kept. We can change the behaviour to keep the selected item and to trim the other one.
+                        </p>
+                        <b><span class="blue">Options</span> &#129170; <span class="blue">Trim content behind media items when editing</span></b> &#8594; <span class="green">&#128505;</span>
+                        <p>
+                            a second way to reach the setting is to click <img class="inline-icon" src="img/icon_rmb.png" alt="Right Mouse Button" title="Right Mouse Button"> on <span class="blue">Auto-crossfade</span>
+                            <br class="short">
+                            Then check <span class="blue">Trim content behind media items when editing</span> &#8594; <span class="green">&#128505;</span>
+                        </p>
+                    </li>
+                </ul>
             </li>
         </ul>
-
-
-
+        
+        
+        
         <br>
         <h1 id="definitions-and-names">Definitions and names</h1>
         <table>
             <tr>
                 <td>Item</td>
                 <td class="arrow">&#8594;</td>
-                <td>audio/midi/video track</td>
+                <td>an abstract container that can hold audio/midi/video tracks</td>
             </tr>
             <tr>
                 <td>MIDI</td>
                 <td class="arrow">&#8594;</td>
-                <td>Musical Instrument Digital Interface</td>
+                <td><b>M</b>usical <b>I</b>nstrument <b>D</b>igital <b>I</b>nterface</td>
             </tr>
             <tr>
                 <td>Arrangement Window</td>
                 <td class="arrow">&#8594;</td>
-                <td>the window where the audio tracks are visually displayed</td>
+                <td>Where the audio tracks are visually displayed and edited</td>
             </tr>
             <tr>
                 <td>Lanes</td>
                 <td class="arrow">&#8594;</td>
-                <td>multiple retakes for a single item</td>
+                <td>multiple recording retakes for a single item</td>
+            </tr>
+            <tr>
+                <td>Fader</td>
+                <td class="arrow">&#8594;</td>
+                <td>a single item's volume knob/slider</td>
             </tr>
         </table>
 
@@ -158,51 +281,148 @@
         <h2 id="shortcuts">Shortcuts</h2>
         <table>
             <tr>
-                <td>ctrl + M</td>
+                <td class="text-align-right"><span class="orange">ctrl</span> + M</td>
                 <td class="arrow">&#8594;</td>
                 <td>Show/hide mixer</td>
             </tr>
             <tr>
-                <td>W</td>
+                <td class="text-align-right">W <span class="info">|</span> Home</td>
                 <td class="arrow">&#8594;</td>
-                <td>Place the head/cursor to the start of the timeline</td>
+                <td>Place the playhead to the start of the timeline</td>
             </tr>
             </tr>
             <tr>
-                <td>End</td>
+                <td class="text-align-right">End</td>
                 <td class="arrow">&#8594;</td>
-                <td>Place the head/cursor to the end of the timeline</td>
+                <td>Place the playhead to the end of the timeline</td>
             </tr>
             <tr>
-                <td>alt + Enter</td>
+                <td class="text-align-right"><span class="purple">alt</span> + Enter</td>
                 <td class="arrow">&#8594;</td>
                 <td>Open <span class="blue">Project Settings</span></td>
             </tr>
             <tr>
-                <td>ctrl + P</td>
+                <td class="text-align-right"><span class="orange">ctrl</span> + P</td>
                 <td class="arrow">&#8594;</td>
                 <td>Open <span class="blue">Preferences</span></td>
             </tr>
             <tr>
-                <td>ctrl + alt + T</td>
+                <td class="text-align-right"><span class="orange">ctrl</span> + <span class="purple">alt</span> + T</td>
                 <td class="arrow">&#8594;</td>
                 <td>Show/hide <span class="blue">Transport (Play/Record/Stop...)</span></td>
             </tr>
             </tr>
             <tr>
-                <td>ctrl + R</td>
+                <td class="text-align-right">S</td>
+                <td class="arrow">&#8594;</td>
+                <td>Split the item on the playhead</td>
+            </tr>
+            <tr>
+                <td class="text-align-right">R</td>
+                <td class="arrow">&#8594;</td>
+                <td>Toggle <span class="blue">Repeat</span></td>
+            </tr>
+            <tr>
+                <td class="text-align-right"><span class="orange">ctrl</span> + <img src="img/icon_lmb.png" alt="Left Mouse Button" title="Left Mouse Button"></td>
+                <td class="arrow">&#8594;</td>
+                <td>Drag an Item to duplicate it</td>
+            </tr>
+            <tr>
+                <td class="text-align-right"><span class="purple">alt</span> + <img src="img/icon_lmb.png" alt="Left Mouse Button" title="Left Mouse Button"></td>
+                <td class="arrow">&#8594;</td>
+                <td>Drag an Item to translate it's media content while maintaining the Item's placement and length</td>
+            </tr>
+        </table>
+        <br class="short">
+
+        <p>Useful but not essential</p>
+
+        <table>
+            <tr>
+                <td class="text-align-right"><span class="orange">ctrl</span> + R</td>
                 <td class="arrow">&#8594;</td>
                 <td>Begin recording</td>
             </tr>
             <tr>
-                <td>S</td>
+                <td class="text-align-right">V</td>
                 <td class="arrow">&#8594;</td>
-                <td>Split the item</td>
+                <td>Automate an item's volume</td>
             </tr>
             <tr>
-                <td>T</td>
+                <td class="text-align-right">P</td>
+                <td class="arrow">&#8594;</td>
+                <td>Automate an item's pan</td>
+            </tr>
+            <tr>
+                <td class="text-align-right">T</td>
                 <td class="arrow">&#8594;</td>
                 <td>Cycle between a single item's multiple takes/lanes</td>
+            </tr>
+            <tr>
+                <td class="text-align-right"><span class="purple">alt</span> + X</td>
+                <td class="arrow">&#8594;</td>
+                <td class="content-align-vertical">Toggle auto <span class="blue fix-left-space">Auto-crossfade</span> <img class="fix-spaces" src="img/reaper/icon_reaper_auto_crossfade.jpg" alt="Auto-crossfade icon" title="Auto-crossfade icon"> between overlapping media</td>
+            </tr>
+            <tr>
+                <td class="text-align-right"><span class="purple">alt</span> + S</td>
+                <td class="arrow">&#8594;</td>
+                <td class="content-align-vertical">Toggle <span class="blue fix-left-space">Snapping</span> <img class="fix-spaces" src="img/reaper/icon_reaper_snapping.jpg" alt="Snapping icon" title="Snapping icon"></td>
+            </tr>
+            <tr>
+                <td class="text-align-right"><span class="orange">ctrl</span> +  <span class="purple">alt</span> + &#8593;</td>
+                <td class="arrow">&#8594;</td>
+                <td>Select the track above</td>
+            </tr>
+            <tr>
+                <td class="text-align-right"><span class="orange">ctrl</span> +  <span class="purple">alt</span> + &#8595;</td>
+                <td class="arrow">&#8594;</td>
+                <td>Select the track below</td>
+            </tr>
+            <tr>
+                <td class="text-align-right"><span class="orange">ctrl</span> + <img src="img/icon_lmb.png" alt="Left Mouse Button" title="Left Mouse Button"></td>
+                <td class="arrow">&#8594;</td>
+                <td>Clicking on <img class="inline-icon" src="img/reaper/icon_reaper_solo.png" alt="Solo toggle button" title="Solo toggle button"> or <img class="inline-icon" src="img/reaper/icon_reaper_mute.png" alt="Mute button" title="Mute button"> will disable every <img class="inline-icon" src="img/reaper/icon_reaper_solo.png" alt="Solo toggle button" title="Solo toggle button"> or <img class="inline-icon" src="img/reaper/icon_reaper_mute.png" alt="Mute button" title="Mute button"></td>
+            </tr>
+            <tr>
+                <td class="text-align-right"></td>
+                <td class="arrow">&#8594;</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="text-align-right"></td>
+                <td class="arrow">&#8594;</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="text-align-right"></td>
+                <td class="arrow">&#8594;</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="text-align-right"></td>
+                <td class="arrow">&#8594;</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="text-align-right"></td>
+                <td class="arrow">&#8594;</td>
+                <td></td>
+            </tr>
+        </table>
+        <br class="short">
+
+        <p>Unnecessary</p>
+
+        <table>
+            <tr>
+                <td class="text-align-right"><span class="aqua">shift</span> + W</td>
+                <td class="arrow">&#8594;</td>
+                <td>Add <span class="blue">Stretch Marker</span></td>
+            </tr>
+            <tr>
+                <td class="text-align-right"><span class="purple">alt</span> + <img class="inline-icon" src="img/icon_lmb.png" alt="Left Mouse Button" title="Left Mouse Button"></td>
+                <td class="arrow">&#8594;</td>
+                <td>Remove <span class="blue">Stretch Marker</span></td>
             </tr>
         </table>
 
@@ -222,11 +442,31 @@
             "<i>This is REAPER 7</i>" video tutorial series on youtube &#8594; <a class="external-link" href="https://youtube.com/playlist?list=PLM0xHqxaiT68FiOXjVG4t2WKltKYioIxC" target="_blank">youtube.com</a>
             <!-- <img src="img/dark_open_in_new.svg" alt="Reaper video tutorials" class="icon-small"> -->
             <br>
-            Legend:
+            <span id="legend">Legend:</span>
             <br>
             <span class="blue">Blue highlight</span> &#8594; Menu voice or setting
             <br class="short">
             <span class="green">Green highlight</span> &#8594; Suggested setting value
+            <br class="short">
+            <span class="orange">ctrl</span> mentions are orange
+            <br class="short">
+            <span class="aqua">shift</span> mentions are aqua-green
+            <br class="short">
+            <span class="purple">alt</span> mentions are violet
+            <br class="short">
+            <!-- LMB & RMB legend entries
+            <table class="center-column">
+                <tr>
+                    <td class="text-align-right">LMB</td>
+                    <td class="arrow">&#8594;</td>
+                    <td><b>L</b>eft <b>M</b>ouse <b>B</b>utton</td>
+                </tr>
+                <tr>
+                    <td class="text-align-right">RMB</td>
+                    <td class="arrow">&#8594;</td>
+                    <td><b>R</b>ight <b>M</b>ouse <b>B</b>utton</td>
+                </tr>
+            </table> -->
             <br>
             Document created February 11, 2026
         </footer>

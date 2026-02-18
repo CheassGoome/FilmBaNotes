@@ -10,6 +10,23 @@
     text-align: center;
 }
 
+.center-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-align-right{
+    text-align: right;
+}
+
+.content-align-vertical{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .blue {
     /* used for paths or menu voices */
     color: #3869dc;
@@ -29,6 +46,20 @@
     color: #c9bb22;
 }
 
+/* additional colours to distinguish text content */
+.orange {
+    color: #ba6d00;
+}
+
+.aqua {
+    color: #00998f;
+}
+
+.purple {
+    color: #9918cb;
+}
+/*  */
+
 .info {
     color: #676767;
 }
@@ -38,7 +69,7 @@
 }
 
 .name {
-    /*Name of an important person*/
+    /* name of an important person */
     background-color: #c9bb2294;
 }
 
@@ -52,16 +83,31 @@
     height: 50px;
 }
 
+.inline-icon{
+    height: 1em;
+    width: auto;
+}
+
 .icon-small {
     width: 1em;
     height: 1em;
     fill: black;
 }
 
+.img-100 {
+    max-height: 100px;
+    width: auto;
+}
+
 a.external-link::after{
     content: url(img/open_in_new.svg);
     filter: brightness(0.4);
     margin-left: 5px;
+}
+
+.fix-left-space{
+    /* this is horrible */
+    margin-left: 1ex;
 }
 
 /*SPECIFIC*/
@@ -78,6 +124,10 @@ body {
     padding-right: 120px;
     height: 100%;
     width: auto;
+}
+
+i, b, span {
+    font-size: inherit;
 }
 
 header {
@@ -165,6 +215,15 @@ hr:after {
     font-size: 1.5em;
     padding: 0 0.25em;
     background: inherit;
+}
+
+td img{
+    height: 1em;
+    width: auto;
+}
+td img.fix-spaces{
+    margin-left: 1ex;
+    margin-right: 1ex;
 }
 
 /* Mobile last */
