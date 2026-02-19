@@ -126,6 +126,15 @@ body {
     width: auto;
 }
 
+p {
+    margin: 0;
+}
+
+.min-width-100 {
+    /* Used to prevent the shortcuts from going newline when resizing the window */
+    min-width: 100px;
+}
+
 i, b, span {
     font-size: inherit;
 }
