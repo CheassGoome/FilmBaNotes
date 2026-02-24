@@ -100,10 +100,14 @@
 }
 
 a.external-link::after{
-    content: url(img/open_in_new.svg);
+    display: inline-block;
+    height: 0.8em;
+    width: 0.8em;
+    margin-left: 0.2ex;
+    content: "";
+    background: url(img/open_in_new.svg) no-repeat 0 0;
     filter: brightness(0.4);
-    margin-left: 5px;
-}
+    background-size: 0.8em}
 
 .fix-left-space{
     /* this is horrible */
@@ -137,6 +141,10 @@ p {
 
 i, b, span {
     font-size: inherit;
+}
+
+i {
+    font-family: 'Times New Roman', Times, serif;
 }
 
 header {
@@ -191,8 +199,9 @@ footer {
     color: #777;
 }
 
-ul {
+ul, ol {
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 hr {
@@ -233,6 +242,13 @@ td img{
 td img.fix-spaces{
     margin-left: 1ex;
     margin-right: 1ex;
+}
+
+table.table-spacer tr td {
+    /* used in suggested_books_and_movies.html */
+    padding-left: 4ex;
+    padding-right: 4ex;
+    padding-top: 0.5em;
 }
 
 /* Mobile last */

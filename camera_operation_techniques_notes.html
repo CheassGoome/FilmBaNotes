@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Film BA Notes</title>
+    <title>Camera Operation Techniques</title>
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
@@ -58,7 +58,6 @@
 
         <br>
 
-
         <h1>Notes</h1>
         <p>
             <span class="gray" id="feb1226">12 February, 2026</span>
@@ -76,8 +75,47 @@
                     </li>
                 </ul>
             </li>
+            <li>
+                Important relative aperture values
+                <ul>
+                    <li>
+                        1.4
+                    </li>
+                    <li>
+                        2
+                    </li>
+                    <li>
+                        2.8
+                    </li>
+                    <li>
+                        4
+                    </li>
+                    <li>
+                        5.6
+                    </li>
+                    <li>
+                        8
+                    </li>
+                    <li>
+                        11
+                    </li>
+                    <li>
+                        16
+                    </li>
+                    <li>
+                        22
+                    </li>
+                    <li>
+                        32
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Focus cannot be fixed in post, so don't get too distracted by adjusting exposure while shooting.
+            </li>
         </ul>
         </p>
+        <br>
         <p>
             We have 3 types of cones in the human eye: long, medium, short. They are L-Cones, M-Cones, and S-Cones respectively.
             <br>
@@ -92,6 +130,105 @@
             photosites
             placement and order matters very little.
         </p>
+        
+        <br class="short">
+        
+        <p id="feb1826">
+            <span class="gray">February 18, 2026</span>
+            <br>
+            Focal length is the distance, expressed in millimiters, between the focal point (the camera sensor) and the lens.
+            <br class="short">
+            When the two get closer, the angle of view increases. Conversly, the angle gets tighter when the two get further.
+            <br class="short">
+            The sensor size changes the angle of view.
+            <br class="short">
+            A full-frame sensor is 36mm wide.
+            <br class="short">
+            Lenses are grouped in many categories. The main lenses are
+            <table>
+                <tr>
+                    <td class="min-width-100">wide angle</td>
+                    <td class="arrow">&#8594;</td>
+                    <td>short focal length; under 40mm</td>
+                </tr>
+                <tr>
+                    <td class="min-width-100">normal</td>
+                    <td class="arrow">&#8594;</td>
+                    <td>focal length; between 40mm and 60mm</td>
+                </tr>
+                <tr>
+                    <td class="min-width-100">telephoto</td>
+                    <td class="arrow">&#8594;</td>
+                    <td>long focal length; above 60mm</td>
+                </tr>
+            </table>
+            <br class="short">
+            Zoom lenses have a variable focal length.
+            <br class="short">
+            Fixed focal length lenses are called <i>Primes</i> <span class="info">or <i>Prime lenses</i></span>.
+            <br class="short">
+            A subject's perspective <span class="info">(distortion)</span> changes by the subject's distance from the camera.
+            <br class="short">
+            All <a href="#relative-aperture">f-numbers</a> are multiple of
+            <math>
+                <msqrt>
+                    <mi>2</mi>
+                </msqrt>
+            </math>
+            <span class="info">&cong; 1,4 <!-- &asymp; --></span>
+            In practice, <a href="#relative-aperture">f-numbers</a> have values outside the multiples of
+            <math>
+                <msqrt>
+                    <mi>2</mi>
+                </msqrt>
+            </math>
+            <br class="short">
+            The lower the number, the greater the iris aperture. f 32 has the iris almost close.
+            <br class="short">
+            The hole made by the iris is known as the entrance pupil.
+        </p>
+        <br class="short">
+        <p>
+            Exposure is the total amount of light hitting and captured by a sensor. It is determined by relative aperture, shutter time, ISO.
+            <br class="short">
+            Exposure is measured in <a href="#exposure-value">EV</a>.
+            <br class="short">
+            ISO and shutter time change 1 <a href="#exposure-value">EV</a> by doubling or halving their value.
+            <br class="short">
+            Modern cameras have a built-in light meter, composed of a line marked by <a href="#exposure-value">EV</a> points.
+            <br class="short">
+            The center marking represents a predetermined correct exposure.
+            <br class="short">
+            <img src="img/camera_built_in_light_meter.jpg" alt="Camera built-in light meter" title="Camera built-in light meter">
+        </p>
+        <br>
+        <p>
+            Every sensor has a limited dynamic range
+            <br>
+            Some tools we can use to judge a scene's brightness are
+            <ul>
+                <li>
+                    exposure meter
+                </li>
+                <li>
+                    histogram
+                </li>
+            </ul>
+        </p>
+        <br>
+        <h2 id="depth-of-field">Depth of Field (DoF)</h2>
+        <p>
+            Depth of field is the depth of the plane of focus.
+            <br class="short">
+            An immaginary box in front of the camera that, within margin of error <span class="info">(known as <i>circle of confusion</i>)</span>, determines what is in focus.
+            <br class="short">
+            A longer focal length lens makes an out of focus background appear blurrier.
+            <br class="short">
+            <a href="#hyperfocus">Hyperfocus</a> when the end of the focus plane matches with the "infinity barrier", we get a plane of focus that has infinite distance and only has a minimum distance.
+            <br class="short">
+            It can be calculated but we won't be asked to do so. There are sites that can do that for us, such as <a class="external-link" href="https://www.dofmaster.com/dofjs.html">dofmaster.com</a>.
+            <br class="short">
+        </p>
 
         <h2 id="rules">Rules</h2>
         <table>
@@ -102,6 +239,32 @@
             </tr>
         </table>
 
+        <br>
+
+        <h1 id="definitions">Definitions & terms</h1>
+        <table>
+            <tr>
+                <td id="relative-aperture" class="min-width-100">Relative aperture</td>
+                <td class="arrow">&#8594;</td>
+                <td>known as the <i>f-number</i>, it is obtained by dividing the effective aperture by the focal length</td>
+            </tr>
+            <tr>
+                <td id="exposure-value" class="min-width-100">EV</td>
+                <td class="arrow">&#8594;</td>
+                <td>Exposure Value is a number derived from the combination of values set on the shutter time, f-number and ISO</td>
+            </tr>
+            <tr>
+                <td id="reciprocity" class="min-width-100">Reciprocity</td>
+                <td class="arrow">&#8594;</td>
+                <td>the inverse relationship between the aperture and shutter speed. Meaning that a higher shutter speed <span class="info">(lower shutter time)</span> requires a greater aperture <span class="info">(lower f-number)</span> to compensate for the exposure</td>
+            </tr>
+            <tr>
+                <td id="hyperfocus" class="min-width-100">Hyperfocus</td>
+                <td class="arrow">&#8594;</td>
+                <td>having a depth of field far enough where the furthest object in focus is infinitely distant</td>
+            </tr>
+        </table>
+
 
 
         <hr>
@@ -109,9 +272,32 @@
         <h1 id="exam">Exam</h1>
 
         The exam will be attended in the studio and is split in a theoretical and a practical part.
-        <br>
+        <br class="short">
         The final score is between 1 and 33. The score is the average between the practical and theoretical parts.
         <br>
+        One question we will be asked is to calculate the equivalent EV for the given settings for the aperture, shutter time and ISO.
+        <!-- <u id="exercise-equivalent-ev">Exercise</u>
+        <div class="exercise" id="exercise-equivalent-ev">
+            Guess the correct equivalent EV given the following settings:
+            <br class="short">
+            <ul id="exercise-equivalent-ev-settings">
+                <!-- TODO js will give an output like
+                 <li>
+                    Aperture: f/2.8
+                </li>
+                <li>
+                    Shutter time: 1/100s
+                </li>
+                <li>
+                    ISO: 400
+                </li>
+                but with different values each time -- >
+            </ul>
+            <!-- Option 1 -- >
+            <!-- Option 2 -- >
+            <!-- Option 3 -- >
+            <!-- Option 4 -- >
+        </div> -->
 
         <h2>Practical exam</h2>
         <ul>
