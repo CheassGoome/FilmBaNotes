@@ -29,7 +29,12 @@
 
 .blue {
     /* used for paths or menu voices */
-    color: #3869dc;
+    color: #44669b;
+}
+
+.light-blue {
+    /* used for settings at the end of the paths and menu voices */
+    color: #258cd6;
 }
 
 .green {
@@ -70,7 +75,12 @@
 
 .name {
     /* name of an important person */
-    background-color: #c9bb2294;
+    background-color: #c9bb2266;
+}
+
+.film {
+    /* name of an film */
+    background-color: #e095ca94;
 }
 
 .arrow {
@@ -158,7 +168,7 @@ header {
 }
 
 h1,
-h2 {
+h2, h3 {
     margin-top: 1em;
     margin-bottom: 1em;
 }
