@@ -79,7 +79,7 @@
 }
 
 .film {
-    /* name of an film */
+    /* film/movie name */
     background-color: #e095ca94;
 }
 
@@ -260,5 +260,23 @@ table.table-spacer tr td {
     padding-right: 4ex;
     padding-top: 0.5em;
 }
+
+/* TMP - should work as intended
+set "numbered" class to OL and LI tags to have the following numbering:
+1.
+2.
+  2.1
+  2.2
+3.
+  3.1
+    3.1.1
+    3.1.2
+  3.2
+ */
+OL.numbered { counter-reset: item }
+ol.numbered LI.numbered { display: block }
+ol.numbered LI.numbered:before { content: counters(item, ".") " "; counter-increment: item }OL { counter-reset: item }
+   ol.numbered LI.numbered { display: block }
+   ol.numbered LI.numbered:before { content: counters(item, ".") " "; counter-increment: item }
 
 /* Mobile last */

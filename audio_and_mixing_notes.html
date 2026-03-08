@@ -243,69 +243,203 @@
                 </ul>
             </li>
         </ul>
+        <br>
+
+        <span class="gray">February 25, 2026</span>
+        <p>
+            sound effects (sfx) and processing effects (audio "modifiers")
+            <br class="short">
+            processing effects are commonly referred to as <a href="#plugins">plugins</a>.
+            
             <br>
+            
+            <a href="#plugins">plugins</a> are accessed through the <img class="fix-spaces" src="img/reaper/icon_reaper_fx_button_disabled.png" alt="Icon for the disabled FX Button in REAPER" title="Icon for the disabled FX Button in REAPER"> button<!-- TODO insert fx image -->
+            <!-- plugins are categorized by type, by delevoper, etc. -->
+            <br class="short">
+            <a href="#plugins">plugins</a> are processed sequentially, starting from the one on top.
+            <br class="short">
+            The professor wants us to set the following <a href="#plugins">plugins</a> on every track:
+            <ul>
+                <li>
+                    <a href="#reaeq"><span class="blue">ReaEQ</span></a> <span class="info">by Cockos</span>
+                </li>
+                <li>
+                    <span class="info">(bypassed/disabled)</span> <a href="reacomp"><span class="blue">ReaComp</span></a> <span class="info">by Cockos</span>
+                </li>
+            </ul>
+            <br class="short">
 
-            <span class="gray">February 25, 2026</span>
-            <p>
-                sound effects (sfx) and processing effects (audio "modifiers")
-                <br class="short">
-                processing effects are commonly referred to as <a href="#plugins">plugins</a>.
-                
-                <br>
-                
-                <a href="#plugins">plugins</a> are accessed through the <img class="fix-spaces" src="img/reaper/icon_reaper_fx_button_disabled.png" alt="Icon for the disabled FX Button in REAPER" title="Icon for the disabled FX Button in REAPER"> button<!-- TODO insert fx image -->
-                <!-- plugins are categorized by type, by delevoper, etc. -->
-                <br class="short">
-                <a href="#plugins">plugins</a> are processed sequentially, starting from the one on top.
-                <br class="short">
-                The professor wants us to set the following <a href="#plugins">plugins</a> on every track:
-                <ul>
-                    <li>
-                        <a href="#reaeq"><span class="blue">ReaEQ</span></a> <span class="info">by Cockos</span>
-                    </li>
-                    <li>
-                        <span class="info">(bypassed/disabled)</span> <a href="reacomp"><span class="blue">ReaComp</span></a> <span class="info">by Cockos</span>
-                    </li>
-                </ul>
-                <br class="short">
+            And remember to save them.
+            <br class="short">
+            <img class="inline-icon" src="img/icon_rmb.png" alt="Right Mouse Button" title="Right Mouse Button">
+            &#129170;
+            <span class="blue">FX chains</span>
+            &#129170;
+            <span class="light-blue">Save all FX as default chain for new tracks</span>
+            &#8594; <span class="green">&#128505;</span>
 
-                And remember to save them.
-                <br class="short">
-                <img class="inline-icon" src="img/icon_rmb.png" alt="Right Mouse Button" title="Right Mouse Button">
-                &#129170;
-                <span class="blue">FX chains</span>
-                &#129170;
-                <span class="light-blue">Save all FX as default chain for new tracks</span>
-                &#8594; <span class="green">&#128505;</span>
-
-                <br>
-                If a plugin doesn't show up, make sure <span class="blue">All Categories</span> is selected.
-                <br>
-                To check the EQ, bypassed it by checking off the checkmark on the top left.
-                <br class="short">
-                EQ should have the loudness matched to the original audio. This can be done with the <span class="blue">Gain</span> slider on the right side of the window.
-
-                
-                
-                <br class="short">
-                <h3>ReaEQ</h3>
-                Every circle <i>parametric equalizer</i> has a type, which serves a specific function.
-                <br class="short">
-                The bell curve the parametric equalizers produce can be resized to narrow or broaden its effect.
-                <br class="short">
-                The <span class="blue">high pass</span> and <span class="blue">low pass</span> filters will discard every frequency above or below the set value.
-            </p>
             <br>
-            <p>
-                To mirror an item:
-                <span class="blue">Item</span>
-                &#129170;
-                <span class="blue">Item settings</span>
-                &#129170;
-                <span class="light-blue">Reverse active take</span>
-                &#8594; <span class="green">&#128505;</span>
-            </p>
-                
+            If a plugin doesn't show up, make sure <span class="blue">All Categories</span> is selected.
+            <br>
+            To check the EQ, bypassed it by checking off the checkmark on the top left.
+            <br class="short">
+            EQ should have the loudness matched to the original audio. This can be done with the <span class="blue">Gain</span> slider on the right side of the window.
+
+            
+            
+            <br class="short">
+            <h3>ReaEQ</h3>
+            Every circle <i>parametric equalizer</i> has a type, which serves a specific function.
+            <br class="short">
+            The bell curve the parametric equalizers produce can be resized to narrow or broaden its effect.
+            <br class="short">
+            The <span class="blue">high pass</span> and <span class="blue">low pass</span> filters will discard every frequency above or below the set value.
+        </p>
+        <br>
+        <p>
+            To mirror an item:
+            <span class="blue">Item</span>
+            &#129170;
+            <span class="blue">Item settings</span>
+            &#129170;
+            <span class="light-blue">Reverse active take</span>
+            &#8594; <span class="green">&#128505;</span>
+        </p>
+
+        <br>
+
+        <span id="mar0426" class="gray">March 04, 2026</span>
+        <!-- TODO fix -->
+         <h2>Compressor</h2>
+        <p>
+            compresses the dynamic range, lowering the contrast between the loudest and lowest peaks.
+            <br class="short">
+            parameters:
+            <table>
+                <tr>
+                    <td>threshold</td>
+                    <td class="arrow">&#8594;</td>
+                    <td>minimum loudness for the compressor to start working</td>
+                </tr>
+                <tr>
+                    <td>gain reduction meter</td>
+                    <td class="arrow">&#8594;</td>
+                    <td>how much the compressor is compensating for</td>
+                </tr>
+                <tr>
+                    <td>ration</td>
+                    <td class="arrow">&#8594;</td>
+                    <td>how aggressive the compression is. 4:1 means that for every 4dB above the threshold, 1dB is maintained</td>
+                </tr>
+                <tr>
+                    <td>attack</td>
+                    <td class="arrow">&#8594;</td>
+                    <td>how quickly the compressor reacts after the threshold is surpassed</td>
+                </tr>
+                <tr>
+                    <td>release</td>
+                    <td class="arrow">&#8594;</td>
+                    <td>how quickly the compressor releases</td>
+                </tr>
+                <tr>
+                    <td>wet</td>
+                    <td class="arrow">&#8594;</td>
+                    <td><span class="info">(aka "make up gain")</span> after compression, use this as a loudness offset</td>
+                </tr>
+            </table>
+        </p>
+        
+        <h2>Beat drop</h2>
+        <ol class="numbered">
+            <li class="numbered">
+                create a new empty track
+                <ol>
+                    <li class="numbered">
+                        add FX <span class="blue">Pink Noise Generator</span>
+                    </li>
+                    <li class="numbered">
+                        add FX <span class="blue">ReaEQ</span>
+                        <ul>
+                            <li>
+                                enable the high pass filter (band n° 5)
+                            </li>
+                            <li>
+                                create a low pass filter &#8594; lower the <span class="light-blue">Bandwidth (oct)</span> parameter
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="numbered">
+                        from the TRIM icon <img class="inline-icon" src="img/reaper/icon_reaper_trim.png" alt="TRIM icon" title="TRIM icon">, check <span class="green">Active</span> for <span class="light-blue">Freq-Low Pass</span> and automate it to preference
+                    </li>
+                </ol>
+            </li>
+            <li class="numbered">
+                create a new empty track
+                <ol>
+                    <li class="numbered">add FX <span class="blue">Tone Generator</span>
+                    </li>
+                    <li class="numbered">
+                        from the TRIM icon <img class="inline-icon" src="img/reaper/icon_reaper_trim.png" alt="TRIM icon" title="TRIM icon">, check <span class="green">Active</span> for <span class="light-blue">Base Frequency (Hz)</span> and automate it to preference
+                    </li>
+                </ol>
+            </li>
+        </ol>
+
+        <br>
+
+        <p>
+            <!-- TODO specify what an envelope is, possibly in the definition & terms section -->
+            Every envelope can be accessed from the icon <img class="inline-icon" src="img/reaper/icon_reaper_trim.png" alt="TRIM icon" title="TRIM icon"> on the <a href="#item">item</a>.
+            <br class="short">
+            in <a href="#reaeq">ReaEQ</a>, the <span class="light-blue">Bandwidth</span> for the Low Pass filter is the resonance.
+        </p>
+        <br class="short">
+        <p> 
+            <a href="#plugin">Plugins</a> can be copied to another track with <img class="inline-icon" src="img/icon_lmb.png" alt="Left Mouse Button" title="Left Mouse Button"> drag & drop from the FX button <img class="inline-icon" src="img/reaper/icon_reaper_fx_button_enabled.png"> to the target FX button.
+            <br class="short">
+            <a href="#plugin">Plugins</a> can be moved from one track to another by <span class="purple">alt</span> + <img class="inline-icon" src="img/icon_lmb.png" alt="Left Mouse Button" title="Left Mouse Button"> drag the FX <img class="inline-icon" src="img/reaper/icon_reaper_fx_button_enabled.png">
+            <br class="short">
+            When the mixer has enough vertical space, the item FX are visible.
+            <br class="short">
+            Toggle on/off with <span class="aqua">shift</span> + <img class="inline-icon" src="img/icon_lmb.png" alt="Left Mouse Button" title="Left Mouse Button">.
+        </p>
+        <br class="short">
+        <h2>The ROUTE button</h2>
+        <p>
+            <img src="img/reaper/icon_reaper_route_button.png" alt="ROUTE button" title="ROUTE button">
+            <br class="short">
+            By default every track routes to the master output.
+            <br class="short">
+            If the output is set to master, <i>master send</i> is active, the first green bar is active.
+            <br class="short">
+            The "master send" toggle on/off with <span class="purple">alt</span> + <img class="inline-icon" src="img/icon_lmb.png" alt="Left Mouse Button" title="Left Mouse Button"> on <img class="inline-icon" src="img/reaper/icon_reaper_route_button.png" alt="ROUTE button" title="ROUTE button">.
+            <br>
+            
+            Click <img class="inline-icon" src="img/icon_lmb.png" alt="Left Mouse Button" title="Left Mouse Button"> and drag <img class="inline-icon" src="img/reaper/icon_reaper_route_button.png" alt="ROUTE button" title="ROUTE button"> to another to connect the first track to the second, receiver track. By doing this, the first track will send its audio output to the receiver track.
+            <br class="short">
+            If multiple tracks are selected, to send them all to a receiver, drag one ROUTE button with <span class="green">shift</span> + <img class="inline-icon" src="img/icon_lmb.png" alt="Left Mouse Button" title="Left Mouse Button"> to the receiver.
+            <br class="short">
+            The sender will have a yellow line, the receiver will have a blue line.
+        </p>
+        <br class="short">
+        <p>            
+            A track can join multiple submixes.
+            <br class="short">
+            It is possible to change the "amout sent", lowering the volume. To do so, drag <img class="inline-icon" src="img/icon_lmb.png" alt="Left Mouse Button" title="Left Mouse Button"> the little wheel adjacent the send, in the mixer.
+        </p>
+        <br class="short">
+        <p>
+            When the mouse hovers over <img class="inline-icon" src="img/reaper/icon_reaper_route_button.png" alt="ROUTE button" title="ROUTE button">, the send and receives are shown.
+            <br class="short">
+            A send route has its equivalent receive route and they share the same parameters. Therefore they are accessible from both the sender and receiver.
+        </p>
+        <br class="short">
+        <p>
+            Submixes can be useful to distinguish music, dialogue and sfx
+            <br class="short">
+            <span class="light-blue">Wet</span> and <span class="light-blue">dry</span> sliders in the FX are for the processed signal (<span class="light-blue">wet</span>) and the input signal (<span class="light-blue">dry</span>).
+        </p>
+            
         <br>
         <h1 id="shortcuts">Shortcuts</h1>
         <table>
@@ -455,6 +589,32 @@
             The professor suggests to play with a V shape for the EQ.
             <br class="short">
             Avoid creating long loops that don't change as it will be considered a cheat to fill time.
+        </p>
+        <br class="short">
+        <span class="gray">March 04, 2026</span>
+        <p>
+            Apply compression to every instrument and try other effects.
+            <br class="short">
+            There must be 3 submixes:
+            <ul>
+                <li>
+                    rythm
+                </li>
+                <li>
+                    fiddle
+                </li>
+                <li>
+                    everything else excluding the bass, that must be left by itself
+                </li>
+            </ul>
+            <br class="short">
+            And also 3 other submixes, used only for the ReaVerbate FX, one for each submix.
+            <br class="short">
+            The 3 reverb submixes are 3 other empty tracks that route to the rytm, fiddle and everythig else submixes. These do not route to the master.
+            <br class="short">
+            If done correctly, by muting the fiddle submix we expect the reverb to mute along with the submix.
+            <br class="short">
+            Use ReaVerbate instead of ReaVerb.
         </p>
         
         

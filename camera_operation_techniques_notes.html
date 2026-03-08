@@ -233,6 +233,55 @@
             <br class="short">
         </p>
 
+        <br>
+
+        <span id="mar0526" class="gray">March 05, 2026</span>
+        <!-- TODO fix -->
+        <h2>3 point lighting</h2>
+        <!-- middle shot: from head to waist -->
+        <p>
+            Basic lighting setup. It is composed by:
+            <table>
+                <tr>
+                    <td>keylight</td>
+                    <td class="arrow">&#8594;</td>
+                    <!-- TODO crea record id directional -->
+                    <td><a href="#directional">directional</a> light, the strongest light</td>
+                </tr>
+                <tr>
+                    <td>fill light</td>
+                    <td class="arrow">&#8594;</td>
+                    <td><a href="#diffuse">diffuse</a> light, reduces contrast on the subject by illuminating its shadows. It should be -1 or -2 stops compared to the keylighs</td>
+                </tr>
+                <tr>
+                    <td>backlight</td>
+                    <td class="arrow">&#8594;</td>
+                    <td><span class="info">(aka <i>rim light</i>)</span> directional light, a dim light that gives the subject's head and shoulders a silhouette to avoid blending with the background. It shouldn't illuminate the face</td>
+                </tr>
+            </table>
+            Every light from this setup have to be placed higher than the subject.
+        </p>
+
+        <br>
+        
+        <p>    
+            C-stands have legs with different heights to allow for multiple C-stands to be placed very close.
+            <br>
+            The cables we use to power the lights to the <a href="#power-control-unit">ballast</a> are the silver ones. They need to have the 2 red dots aligned before connecting them.
+            <br class="short">
+            To detach them, pull the collar away and then the whole cable.
+            <br class="short">
+            The ballast is powered by a cable that has to be inserted and rotated.
+        </p>
+        <br>
+        <p>
+            The <a href="#diffuse">diffused</a> led panel we use comes with a control unit that can be detached.
+            <br class="short">
+            Keep the cables secure and out of the way of people passing to avoid tripping over lights and equipment.
+        </p>
+
+
+
         <h2 id="rules">Rules</h2>
         <table>
             <tr>
@@ -265,6 +314,21 @@
                 <td id="hyperfocus" class="min-width-100">Hyperfocus</td>
                 <td class="arrow">&#8594;</td>
                 <td>having a depth of field far enough where the furthest object in focus is infinitely distant</td>
+            </tr>
+            <tr>
+                <td id="directional" class="min-width-100">Directional light</td>
+                <td class="arrow">&#8594;</td>
+                <td>opposite of the diffuse light, it is meant to illuminate a delimited area</td>
+            </tr>
+            <tr>
+                <td id="diffuse" class="min-width-100">Diffused light</td>
+                <td class="arrow">&#8594;</td>
+                <td>light used to illuminate a large area. A led panel or a point light + diffuser are usually preferred</td>
+            </tr>
+            <tr>
+                <td id="power-control-unit" class="min-width-100">Ballast</td>
+                <td class="arrow">&#8594;</td>
+                <td>Formally known as the <i>Power Control Unit</i>, it is used to power lights</td>
             </tr>
         </table>
 
