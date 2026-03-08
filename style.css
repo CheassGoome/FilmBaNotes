@@ -279,4 +279,9 @@ ol.numbered LI.numbered:before { content: counters(item, ".") " "; counter-incre
    ol.numbered LI.numbered { display: block }
    ol.numbered LI.numbered:before { content: counters(item, ".") " "; counter-increment: item }
 
+sup, sub {
+    font-size: 60%;
+    font-family: 'Courier New', Courier, monospace;
+}
+   
 /* Mobile last */
