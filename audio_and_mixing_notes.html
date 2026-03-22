@@ -438,7 +438,130 @@
             <br class="short">
             <span class="light-blue">Wet</span> and <span class="light-blue">dry</span> sliders in the FX are for the processed signal (<span class="light-blue">wet</span>) and the input signal (<span class="light-blue">dry</span>).
         </p>
-            
+
+        <br>
+
+        <span id="mar1126" class="gray">March 11, 2026</span>
+        <p>
+            make sure the tracks intentionally muted are signed with "NO!" before delivering the project
+            sends to reverb are meant
+            organization:
+            <ol>
+                <li>
+                    have the "master fader" for the submix
+                </li>
+                <li>
+                    have the logical tracks for the effects
+                </li>
+                <li>
+                    put the actual tracks last
+                </li>
+                <li>
+                    submixes naming convention: E.g. for "Drums" -> "Drums SUB" for Drums submix
+                </li>
+                <li>
+                    the idea with submixes for the FXs is to have the track sends and receives already setup, individually, and having the ability to enable and disable each track's FX quickly and efficiently
+                </li>
+            </ol>
+            Tracks used as folders mustn't have items.
+            <br class="short">
+            If the replay is distorted, probably the buffer is too small.
+        </p>
+        <br class="short">
+        <p>
+            folders:
+            <ul>
+                <li>
+                    are empty tracks
+                </li>
+                <li>
+                    never use the folder track to hold audio items
+                </li>
+                <li>
+                    drag and drop the other selected desired tracks in the folder
+                </li>
+                <li>
+                    specific FX tracks should be put before the actual tracks. If the tracks are under a folder, so will the FX be
+                </li>
+                <li>
+                    folders can be collapsed with the arrow on the top left of the track
+                </li>
+                <li>
+                    in the master they can be ordered to the left by RMB>"Group folders to left"
+                </li>
+            </ul>
+            The file names are very descriptive. "int" is interior, "ext" is exterior.
+        </p>
+
+        <br>
+
+        <span id="mar1826" class="gray">March 18, 2026</span>
+        <h2>Assignment feedback</h2>
+        <ul>
+            <li>
+                dialogue does not go in the SFX folder
+            </li>
+            <li>
+                division for the teams isn't needed
+            </li>
+            <li>
+                avoid mixing submixes and folders together
+            </li>
+            <li>
+                suggestions
+                <ul>
+                    <li>
+                        use the boat breaking waves for far waters
+                    </li>
+                    <li>
+                        use the crowd for the ticket scene
+                    </li>
+                    <li>
+                        the ferry never turns off the engine
+                    </li>
+                    <li>
+                        quieter corwd on the ferry
+                    </li>
+                    <li>
+                        less fade-in between cut scenes
+                    </li>
+                    <li>
+                        do clean cuts for SFX
+                    </li>
+                    <li>
+                        for cuts that are too abrupt, use a crossfade between two scene's audio 1 frame before and after the cut
+                    </li>
+                    <li>
+                        triple check the timings (sync with video & scenes)
+                    </li>
+                    <li>
+                        check once more with only the SFX playing
+                    </li>
+                    <li>
+                        keep similar sounds in between identical scenes with different angle
+                    </li>
+                    <li>
+                        rename every track by their use case (and place)
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <h2 id="realimit">ReaLimit</h2>
+        <p>
+            <!-- master bus = one track pre-master that every track goes to -->
+            It is an FX the last resort to fix/avoid distortion. It is applied on the master track.
+            <br class="short">
+            It is known as a <i>brickwall limiter</i>; it is a specific type of compressor.
+            <br class="short">
+            The <span class="blue">Brickwall Ceiling</span> slider is the final output level.
+            <br class="short">
+            <span class="blue">True peak</span> prevents intersample distortion and is indespensible when sending audio to broadcast.
+            <br class="short">
+            ReaLimit can be used to compress the dynamics by lowering the <span class="blue">Threshold</span> value.
+        </p>
+
+
+
         <br>
         <h1 id="shortcuts">Shortcuts</h1>
         <table>
@@ -498,6 +621,11 @@
                 <td class="text-align-right min-width-100"><span class="purple">alt</span> + <img src="img/icon_rmb.png" alt="Right Mouse Button" title="Right Mouse Button"></td>
                 <td class="arrow">&#8594;</td>
                 <td>Drag on the Arrangement Window to create a <a href="#razor-edit"><span class="blue">Razor Edit</span></a> selection</td>
+            </tr>
+            <tr>
+                <td class="text-align-right min-width-100"><span class="orange">ctrl</span> + <span class="aqua">shift</span> + V</td>
+                <td class="arrow">&#8594;</td>
+                <td>Open the video player</td>
             </tr>
         </table>
 
@@ -615,6 +743,32 @@
             <br class="short">
             Use ReaVerbate instead of ReaVerb.
         </p>
+        <br class="short">
+        <span class="gray">March 11, 2026</span>
+        <p>
+            Assignment: given the audio & video files, redo/replace the first 59s of sfx
+            - change time scale to "Hours:Minutes:Seconds:Frames" aka timecode
+            - change the "Show grid, line spacing:" setting by rmb on "Snap/Grid Setting" tool and set it to "frame"
+            - be consistent with audio volumes and keep a clear dialogue
+            - disable the video master send
+            - the "*Dialogue Denoised*" and "*Music*", the first (and only) 2 files inside of the audio folder must be added. They have to have the same start as the same time as the
+        </p>
+        <br class="short">
+        <span class="gray">March 18, 2026</span>
+        <ul>
+            <li>
+                put ReaLimit
+            </li>
+            <li>
+                don't touch the master fader
+            </li>
+            <li>
+                every SFX under one foler
+            </li>
+            <li>
+                add reverb to the last hit (of the music track) -> use a send to a reverb track; don't use automation
+            </li>
+        </ul>
         
         
         
