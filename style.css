@@ -285,3 +285,20 @@ sup, sub {
 }
    
 /* Mobile last */
+@media (max-width: 600px) {
+    .body {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    /* change ul li indentations to be shorter */
+    ul {
+        padding-inline-start: 10px;
+    }
+    .numbered, .numbered ol {
+        padding-left: 10px;
+    }
+    .content-align-vertical {
+        /* horrible fix */
+        display: block;
+    }
+}
