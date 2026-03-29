@@ -124,6 +124,11 @@ a.external-link::after{
     margin-left: 1ex;
 }
 
+.no-padding {
+    padding-inline-start: 0px;
+    padding: 0;
+}
+
 /*SPECIFIC*/
 body {
     padding-top: 0;
@@ -261,6 +266,11 @@ table.table-spacer tr td {
     padding-top: 0.5em;
 }
 
+italic {
+    /* I love inventing containers */
+    font-family: 'Times New Roman', Times, serif;
+}
+
 /* TMP - should work as intended
 set "numbered" class to OL and LI tags to have the following numbering:
 1.
@@ -282,6 +292,14 @@ ol.numbered LI.numbered:before { content: counters(item, ".") " "; counter-incre
 sup, sub {
     font-size: 60%;
     font-family: 'Courier New', Courier, monospace;
+}
+
+ol.specify-number {
+  list-style: none;
+}
+
+ol.specify-number>li:before {
+  content: attr(num) ". ";
 }
    
 /* Mobile last */
