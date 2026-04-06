@@ -1,2 +1,2 @@
 # FilmBaNotes
-The only reasonable platform to save my notes to.
+The only reasonable platform to save my notes on.

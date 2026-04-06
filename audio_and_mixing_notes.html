@@ -284,7 +284,7 @@
             
             
             <br class="short">
-            <h3>ReaEQ</h3>
+            <h2>ReaEQ</h2>
             Every circle <i>parametric equalizer</i> has a type, which serves a specific function.
             <br class="short">
             The bell curve the parametric equalizers produce can be resized to narrow or broaden its effect.
@@ -504,6 +504,9 @@
                 avoid mixing submixes and folders together
             </li>
             <li>
+                less rumble/low frequencies on every track dedicated to distant objects
+            </li>
+            <li>
                 suggestions
                 <ul>
                     <li>
@@ -599,6 +602,97 @@
             </ul>
         </p>
 
+        <br>
+
+        <span id="apr0126" class="gray">April 1, 2026</span>
+        <h2 id="automation">Automation</h2> <!-- Mid '70s -->
+        <p>
+            It allows to change parameters over time and is accessed through the <span class="blue">Track Envelopes</span> <img class="inline-icon" src="img/reaper/icon_reaper_trim.png" alt="TRIM icon" title="TRIM icon">
+            <br>
+            The <i>automation panel</i> shows every editable parameter.
+            <br>
+            Parameters pertaining to a send or an FX plugin are all grouped under a dedicated voice that can be collapsed.
+            <br>
+            Every parameter can be edited when visible. To do so, click on the empty square under the <span class="blue">Visible</span> column found in the <span class="blue">Track Envelopes</span> <img class="inline-icon" src="img/reaper/icon_reaper_trim.png" alt="TRIM icon" title="TRIM icon">.
+        </p>
+        <br>
+        <p>
+            Once the envelope is visible, a point can be placed by clicking (<span class="aqua">shift</span> + <img class="inline-icon" src="img/icon_lmb.png" alt="Left Mouse Button" title="Left Mouse Button">) or by drawing (<span class="orange">ctrl</span> + <img class="inline-icon" src="img/icon_lmb.png" alt="Left Mouse Button" title="Left Mouse Button">).
+            <br>
+            Clicking on a point selects it. <span class="aqua">Shift</span> + <img class="inline-icon" src="img/icon_lmb.png" alt="Left Mouse Button" title="Left Mouse Button"> other points will select multiple. Selected points can be copied and pasted (<span class="orange">ctrl</span> + <italic>C</italic>; <span class="orange">ctrl</span> + <italic>V</italic>).
+            <br>
+            <span class="info">Each automation envelope can be individually bypassed through the small green I/O button on the left (by default bypass is disabled &#8594; <img class="inline-icon" src="img/reaper/icon_reaper_bypass_enabled.png" alt="Envelope bypass enabled" title="Envelope bypass enabled">)</span>
+            <br>
+            Automation tracks can be hidden/cleared from the GUI (cog icon &#8594; <img class="inline-icon" src="img/reaper/icon_reaper_cog.png" alt="Envelope cog icon" title="Envelope cog icon">)
+            <br>
+            From the the menu accessed through the cog icon <img class="inline-icon" src="img/reaper/icon_reaper_cog.png" alt="Envelope cog icon" title="Envelope cog icon"> the envelope can be overlayed over the track (<img class="inline-icon" src="img/reaper/icon_reaper_cog.png" alt="Envelope cog icon" title="Envelope cog icon"> &#129170; <span class="light-blue">Move to media lane</span>).
+            <br>
+            Automation is useful to correct varying audio levels in dialogues.
+        </p>
+        <br>
+        <h3 id="automation-modes">Automation modes</h3>
+        <p>
+            <ul>
+                <li>
+                    absolute mode
+                    <ul>
+                        <li>1:1 correspondence between the values and the position of the fader</li>
+                        <li>the fader is still available to change volume without touching the automation</li>
+                        <li>access <span class="light-blue">TRIM</span> mode through the automation panel <img class="inline-icon" src="img/reaper/icon_reaper_trim.png" alt="Automation Panel Icon" title="Automation Panel Icon"> &#129170; <span class="blue">Automation mode:</span> &#129170; <span class="light-blue">Trim/Read</span></li>
+                    </ul>
+                </li>
+                <li>
+                    trim mode
+                    <ul>
+                        <li>the fader is controlled by the automation value</li>
+                        <li>access <span class="light-blue">READ</span> mode through the automation panel <img class="inline-icon" src="img/reaper/icon_reaper_trim.png" alt="Automation Panel Icon" title="Automation Panel Icon"> &#129170; <span class="blue">Automation mode:</span> &#129170; <span class="light-blue">Read</span></li>
+                    </ul>
+                </li>
+                <li>
+                    touch mode
+                    <ul>
+                        <li>the automation is written/overwritten through the change of the fader while playing</li>
+                        <li>access <span class="light-blue">TCH</span> mode through the automation panel <img class="inline-icon" src="img/reaper/icon_reaper_trim.png" alt="Automation Panel Icon" title="Automation Panel Icon"> &#129170; <span class="blue">Automation mode:</span> &#129170; <span class="light-blue">Touch</span></li>
+                    </ul>
+                </li>
+                <li>
+                    latch mode
+                    <ul>
+                        <li>the fader writes/overwrites from the moment it is touched, but unlike touch mode, it doesn't stop writing</li>
+                        <li>access <span class="light-blue">LTCH</span> mode through the automation panel <img class="inline-icon" src="img/reaper/icon_reaper_trim.png" alt="Automation Panel Icon" title="Automation Panel Icon"> &#129170; <span class="blue">Automation mode:</span> &#129170; <span class="light-blue">Latch</span></li>
+                    </ul>
+                </li>
+                <li>
+                    write mode
+                    <ul>
+                        <li>writes/overwrites the automation for every parameter that is armed <span class="info">(see the checked boxes under the <span class="blue">Arm</span> column in the automation panel).</span></li>
+                        <li>parameters can be armed or unarmed by checking the box under the <span class="blue">Arm</span> column, in the <span class="blue">Track Envelopes</span></li>
+                        <li>access <span class="light-blue">WRT</span> mode through the automation panel <img class="inline-icon" src="img/reaper/icon_reaper_trim.png" alt="Automation Panel Icon" title="Automation Panel Icon"> &#129170; <span class="blue">Automation mode:</span> &#129170; <span class="light-blue">Write</span></li>
+                    </ul>
+                </li>
+            </ul>
+            <br class="short">
+            The mode can be changed at any time.
+            <br class="short">
+            The <span class="blue">Track Envelopes</span> icon changes text and colour based on the selected mode. By default it is in <span class="light-blue">TRIM</span> mode &#8594; <img class="inline-icon" src="img/reaper/icon_reaper_trim.png" alt="Automation Panel Icon" title="Automation Panel Icon">
+        </p>
+        <br>
+        <p>
+            There is a slider for each parameter envelope. This <i>automation slider</i> changes permanently the automation points.
+            <br>
+            If a time selection is in place, the slider will create points if needed and change the values of the automation by extruding it.
+            <br>
+            <span class="info">
+                An <i>edge-slide</i> is changing the value of two points in the automation envelope by clicking and dragging the segment in between two points, independent from any current selection.
+                <br class="short">
+                An extrusion can be performed in two ways other than the slider:
+                <br class="short">
+                <span class="aqua">shift</span> + <span class="purple">alt</span> + <i>edge-slide</i> &#8594; simple extrusion
+                <br class="short">
+                <span class="orange">ctrl</span> + <span class="aqua">shift</span> + <i>edge-slide</i> with a time selection &#8594; extrude everything under the time selection
+            </span>
+        </p>
+        <a href="#get-a-load-of-this-assignment">Check out the last assignment</a>
 
 
         <br>
@@ -666,6 +760,11 @@
                 <td class="arrow">&#8594;</td>
                 <td>Open the video player</td>
             </tr>
+            <tr>
+                <td class="text-align-right"><span class="purple">alt</span> + <img class="inline-icon" src="img/icon_lmb.png" alt="Left Mouse Button" title="Left Mouse Button"></td>
+                <td class="arrow">&#8594;</td>
+                <td>Remove <span class="blue">Marker</span></td>
+            </tr>
         </table>
 
         <h2>Useful but not essential</h2>
@@ -713,7 +812,7 @@
             <tr>
                 <td class="text-align-right min-width-100"><span class="orange">ctrl</span> + <img src="img/icon_lmb.png" alt="Left Mouse Button" title="Left Mouse Button"></td>
                 <td class="arrow">&#8594;</td>
-                <td>Clicking on <img class="inline-icon" src="img/reaper/icon_reaper_solo.png" alt="Solo toggle button" title="Solo toggle button"> or <img class="inline-icon" src="img/reaper/icon_reaper_mute.png" alt="Mute button" title="Mute button"> will disable every <img class="inline-icon" src="img/reaper/icon_reaper_solo.png" alt="Solo toggle button" title="Solo toggle button"> or <img class="inline-icon" src="img/reaper/icon_reaper_mute.png" alt="Mute button" title="Mute button"></td>
+                <td>Clicking on <img class="inline-icon" src="img/reaper/icon_reaper_solo.png" alt="Solo toggle button" title="Solo toggle button"> / <img class="inline-icon" src="img/reaper/icon_reaper_mute.png" alt="Mute button" title="Mute button"> will disable every <img class="inline-icon" src="img/reaper/icon_reaper_solo.png" alt="Solo toggle button" title="Solo toggle button"> / <img class="inline-icon" src="img/reaper/icon_reaper_mute.png" alt="Mute button" title="Mute button"> respectively</td>
             </tr>
         </table>
 
@@ -808,6 +907,24 @@
                 add reverb to the last hit (of the music track) -> use a send to a reverb track; don't use automation
             </li>
         </ul>
+        <br class="short">
+        <span id="get-a-load-of-this-assignment" class="gray">April 01, 2026</span>
+        <p>
+            <!-- 01/04/2026
+            is there any way to merge the L/R stereo channels?
+            R: rmb on pan control > "Pan mode:" > "Dual pan" -->
+            
+            <ul>
+                <li>turn up the music when no one is not talking <span class="info">(no abrupt change - use short fade INs & fade OUTs)</span>. Start a little before the dialog has ended</li>
+                <li>add reverb to the very last drum and guitar hit, using a send to a dedicated track with ReaVerbate on it <span class="info">(don't forget to set the <i>wet</i> slider to 0db and <i>dry</i> slider to -inf db</span>. Finally send only the last hit using automation. Look for an appropriate parameter to send under the <span class="blue">Send Envelopes</span> group in the <span class="blue">Track Envelopes</span> and change its value to send only the last hit</li>
+                <li>move the last hit to start the moment the video ends. This will create a gap in the audio: fill the gap.
+                    <br class="small">
+                    The two split music items cannot be moved or edited in any way to compensate for this gap.
+                    <br class="small">
+                    <span class="info">You will most likely need to duplicate the music item to look for a "suitable" riff to crossfade during that silence. It will sound off but look just for continuity.</span>
+                </li>
+            </ul>
+        </p>
         
         
         
@@ -893,7 +1010,7 @@
             <br>
             <span id="legend">Legend:</span>
             <br>
-            <span class="blue">Blue highlight</span> &#8594; Menu path, voice or tools
+            <span class="blue">Blue highlight</span> &#8594; Menu path, menu voice or tool
             <br class="short">
             <span class="light-blue">Light blue highlight</span> &#8594; Setting
             <br class="short">
